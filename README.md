@@ -17,8 +17,10 @@ Reactive Forms é uma das duas maneiras de criar formulários com o Angular.
    
   # Passo a passo para a criação do formulário
   
- 1 - Instalação do ReactiveFormsModule
- 2 - Criar a classe que será o modelo do formulário
- 3 - Criar o componente com o formulário
- 4 - Aplicar o formGroup no formulário formControlName nos inputs
- 5 - Fazer o formulário submter
+  1. Instalação do ReactiveFormsModule
+  2. Criar a classe que será o modelo do formulário
+  3. Criar o componente com o formulário
+  4. Aplicar o formGroup no formulário formControlName nos inputs
+  5. Fazer o formulário submter
+
+   
