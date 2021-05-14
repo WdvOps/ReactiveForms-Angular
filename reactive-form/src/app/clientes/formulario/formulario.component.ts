@@ -28,4 +28,13 @@ export class FormularioComponent implements OnInit {
     })
   }
 
+  onSubmit() {
+    // aqui você pode implementar a logica para fazer seu formulário salvar
+    console.log(this.formCliente.value);
+
+    // Usar o método reset para limpar os controles na tela
+    this.formCliente.reset(new Cliente());
+  
+}
+
 }
