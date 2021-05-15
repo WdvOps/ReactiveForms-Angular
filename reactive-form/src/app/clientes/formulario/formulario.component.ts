@@ -24,7 +24,7 @@ export class FormularioComponent implements OnInit {
       genero: new FormControl(cliente.genero),
       dataNascimento: new FormControl(cliente.dataNascimento),
       observacao: new FormControl(cliente.observacao),
-      inativo: new FormControl(cliente.inativo)
+     
     })
   }
 
