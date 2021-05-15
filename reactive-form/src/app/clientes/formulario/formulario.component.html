@@ -1,38 +1,23 @@
-
-<header class="bg-light text-center text-lg-start">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-mdb-toggle="collapse"
-          data-mdb-target="#navbarExample01"
-          aria-controls="navbarExample01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarExample01">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- endNavbar -->
+<header class="bg-light text-center text-lg-start .shadow-3-strong">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <ul class="list-unstyled mb-0">
+      <li>
+        <a href="#!" class="text-dark"><i class="fab fa-angular"></i></a>
+      </li>
+      <li>
+        <a href="#!" class="text-dark">Home</a>
+      </li>
+      <li>
+        <a href="#!" class="text-dark">About</a>
+      </li>
+      <li>
+        <a href="#!" class="text-dark">Contact</a>
+      </li>
+   </ul>
+  </div>
+  <!-- Copyright -->
+</header>
 
 
     <!-- Card -->
@@ -41,7 +26,7 @@
     <div class="card-body">
     
     <!-- Form -->
-<form [formGroup]="formCliente">
+<form [formGroup]="formCliente" (ngSubmit)="onSubmit()">
 
     <div class="form-group">
       <label for="nome">Nome</label>
@@ -51,8 +36,8 @@
     <div class="form-group">
       <label for="tipo">Tipo</label>
       <select class="form-control" name="tipo" id="tipo" formControlName="tipo">
-        <option value="1">Pessoa física</option>
-        <option value="2">Pessoa jurídica</option>
+        <option [value]="1">Pessoa física</option>
+        <option [value]="2">Pessoa jurídica</option>
       </select>
     </div>
   
@@ -94,12 +79,46 @@
     <!-- endCard -->
 
     <!-- Footer -->
-<footer class="bg-light text-center text-lg-start">
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2020 Copyright:
-      <a class="text-dark" href="https://github.com/WdvOps/ReactiveForms-Angular">Will Freittas - Angular fullstack Developer - Evolving</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
+    <footer class="bg-light text-center text-lg-start">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <form action="">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-auto mb-4 mb-md-0">
+              <p class="pt-2"><strong>Sign up for our newsletter</strong></p>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-md-5 col-12 mb-4 mb-md-0">
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="form5Example2" class="form-control" placeholder="Email address" />
+                
+              </div>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-auto mb-4 mb-md-0">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary mb-4">Subscribe</button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-dark" href="https://www.linkedin.com/in/will-freittas/">Will Freittas - Angular Fullstack Developer - Evolving    <i class="fab fa-linkedin"></i></a>
+      </div>
+       
+      <!-- Copyright -->
+    </footer>
    <!-- EndFooter -->

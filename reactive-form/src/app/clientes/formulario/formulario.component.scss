@@ -1,5 +1,17 @@
 
 .card-body {
-    padding: 0 200px 50px ;
+    padding: 0 200px 50px 10px;
 
+}
+.form-group input {
+    
+    outline:none;
+} 
+ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+ul li i{
+    font-size: 26px;
+    color: red;
 }
